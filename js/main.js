@@ -1,1 +1,4 @@
-console.log("Hello World");
+
+var theDate = new Date(document.lastModified)
+document.write(theDate);
+
