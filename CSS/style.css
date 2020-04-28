@@ -1,29 +1,20 @@
+ @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
-body {
-    font-family: Raleway, san-serif;
-}
-#content {
-    width: 80%;
-    max-width: 1000px;
-    margin: 50px auto;
-}
-main {
-    padding: 10px 50px;
-}
 h1, footer {
     background-color: brown;
     color: white;
-    padding: 10px;
     text-align:center;
     border-radius: 15px;
+    padding:15px 0px 15px 15px;
+    
+}
 
   
 }
 h2{
   border-bottom: 2px solid gray;
 }
-footer a {
+footer a{
   color: white;
 }
 img{
@@ -38,3 +29,19 @@ img{
 li a, li a:visited{
     color:brown;
 }
+body{
+    max-width: 650px;
+    margin: 0 auto;
+    font-family: Raleway, san-serif;
+}
+
+h1{
+    font-weight: 300;
+    font-size: 36px;
+    text-align:center;
+    padding:15px 0px 15px 15px;
+    
+}
+h2{
+    border-bottom: 2px solid #969fa0;
+    font-size: 1.5rem;
