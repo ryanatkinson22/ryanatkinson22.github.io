@@ -17,6 +17,7 @@ h1, footer {
     padding: 10px;
     text-align:center;
     border-radius: 15px;
+
   
 }
 h2{
@@ -34,9 +35,6 @@ img{
     
 }
 
-li {
-    padding: 5px 0;
-}
 li a, li a:visited{
     color:brown;
 }
