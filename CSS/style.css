@@ -4,12 +4,10 @@ h1, footer {
     background-color: brown;
     color: white;
     text-align:center;
-    border-radius: 15px;
-    padding:15px 0px 15px 15px;
+    border-radius: 10px;
+    
     
 }
-
-  
 
 footer a{
   color: white;
@@ -36,9 +34,10 @@ h1{
     text-align:center;
     padding:15px 0px 15px 15px;
     
+    
 }
 h2{
-    border-bottom: 2px solid #969fa0;
+    border-bottom: 2px solid gray;
     font-size: 1.5rem;
     border-bottom: 2px solid gray;
 }
