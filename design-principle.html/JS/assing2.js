@@ -1,5 +1,3 @@
-
-var theDate = new Date(document.lastModified)
+var theDate = (document.lastModified)
 document.write("Last updated on:  ")
 document.write(theDate);
-

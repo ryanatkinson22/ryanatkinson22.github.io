@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
+
+h1, h2, h3{
+    font-family: 'Lora', serif;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+   /* padding:20px;*/
+    line-height: 1.5em;
+    font-size: 1.1em;
+} 
+
+h1{
+    margin-bottom: 60px;
+}
+h2{
+
+    font-size: 40px;
+    
+}
+section {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+img{
+    display: block;
+    margin:0 auto; 
+}
+
+img{
+    max-width: width 400px;
+    width: 95%;
+}
+
+a { color:black;
+}
+.aline{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+.aline1{
+    background-color: gray;
+}
+.aline2{
+    background-color: gray;
+}
+.aline3{
+    background-color: gray;
+}
+
+@media screen and (min-width: 550px){
+    main {
+        display: grid;
+        grid-template-columns: 11fr 1fr;
+        grid-gap: 45px;
+    }
+    img{
+        max-width: 400px;
+        width: 80%;
+    }
+}
+
+
+
+@media screen and (min-width: 900px){
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 50px;
+    }
+}
+
+
+
+header,
+footer {
+    text-align: center;
+    background-color: #49c4a9;
+    padding: 25px;
+    color: white;
+    border-radius: 15px;
+}
+
+header a,
+footer a {
+    color: white;
+}
