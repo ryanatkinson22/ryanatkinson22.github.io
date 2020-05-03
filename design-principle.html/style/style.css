@@ -8,7 +8,6 @@ h1, h2, h3{
 
 p {
     text-align: center;
-   /* padding:20px;*/
     line-height: 1.5em;
     font-size: 1.1em;
 } 
@@ -39,12 +38,14 @@ img{
 
 a { color:black;
 }
-.aline{
+.aline
+{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 50px;
 }
-.aline1{
+.aline1
+{
     background-color: gray;
 }
 .aline2{
@@ -84,7 +85,7 @@ footer {
     background-color: #49c4a9;
     padding: 25px;
     color: white;
-    border-radius: 15px;
+
 }
 
 header a,
