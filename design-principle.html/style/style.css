@@ -9,16 +9,23 @@ h1, h2, h3{
 p {
     text-align: center;
     line-height: 1em;
-    font-size: 1em;
+    font-size: 20px;
+    padding:35px;
 } 
 
 h1{
-    margin-bottom: 60px;
+
+        padding:5px;
+        border: 20px solid  #49c4a9;
+        font-size: 40px;
 }
 h2{
 
-    font-size: 40px;
-    
+    font-size: 30px;
+    border: 20px solid  #49c4a9;;
+}
+.para{
+    border: 20px solid  #49c4a9;;
 }
 section {
     display: block;
@@ -58,7 +65,7 @@ a { color:black;
 @media screen and (min-width: 550px){
     main {
         display: grid;
-        grid-template-columns: 11fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-gap: 45px;
     }
     img{
@@ -83,8 +90,9 @@ header,
 footer {
     text-align: center;
     background-color: #49c4a9;
-    padding: 25px;
+    padding: 1px;
     color: white;
+    line-height: 15px;
 
 }
 
