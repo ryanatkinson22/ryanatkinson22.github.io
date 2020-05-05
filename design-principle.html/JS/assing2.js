@@ -1,3 +1,3 @@
 var theDate = (document.lastModified)
-document.write("Last updated on:  ")
-document.write(theDate);
+document.getElementById("update").textContent = theDate;
+
