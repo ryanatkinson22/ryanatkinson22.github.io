@@ -43,6 +43,7 @@ img{
 
 a { color:black;
 }
+
 .aline
 {
     display: grid;
@@ -61,7 +62,7 @@ a { color:black;
 }
 
 @media screen and (min-width: 550px){
-    main {
+    .aline {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 45px;
@@ -75,7 +76,7 @@ a { color:black;
 
 
 @media screen and (min-width: 900px){
-    main {
+    .aline {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 50px;
