@@ -44,12 +44,6 @@ img{
 a { color:black;
 }
 
-.aline
-{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 50px;
-}
 .aline1
 {
     background-color: gray;
