@@ -1,23 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Muli:wght@700&display=swap');
-h1, h2, h3{
-    font-family: 'Muli', sans-serif;
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Signika&display=swap');
+
+h1, h2, h3,h4{
+    font-family: 'Signika', sans-serif;
+    padding-left: 30px;
 }
 
-p {
-    text-align: center;
-    line-height: 1em;
+p{
+    
     font-size: 20px;
-    padding:35px;
+    padding:25px;
+    padding-bottom: 25px;
+    font-family: 'Acme', sans-serif;
+    padding-left: 70px;
+    line-height: 30px;
 } 
 
 h1{
-        padding:5px;
+       padding:5px;
        font-size: 40px;
+       padding-left: 30px;
 }
 h2{
 
     font-size: 30px;
+    padding-left: 30px;
   }
 
 nav {
@@ -33,11 +40,11 @@ nav {
 }
 nav ul li a {
 	display: block;
-	color: #fff;
+	color: white;
 	text-align: center;
 	padding: 15px;
 	text-decoration: none;
-  font-size: 25px;
+    font-size: 25px;
   
 }
 
@@ -49,15 +56,7 @@ nav a:hover {
 nav li {
   display: inline-block;
 }
-img{
-  display: block;
-  margin:0 auto; 
-}
 
-img{
-  max-width: width 400px;
-  width: 95%;
-}
 
 
 @media screen and (min-width: 550px){
@@ -67,12 +66,12 @@ img{
         grid-gap: 45px;
     }
     img{
-        max-width: 400px;
+        max-width: 200px;
         width: 80%;
+        padding-left: 40px;
+        
     }
 }
-
-
 
 @media screen and (min-width: 900px){
     .main {
@@ -80,8 +79,7 @@ img{
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 50px;
     }
-}
-
+} 
 
 
 header,
@@ -101,5 +99,110 @@ footer a {
 
 
 
+/* Typography*/
+section{
+    background-color: #00a9e2; 
+    overflow: hidden;
+}
+
+.typography{
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 40px;
+    width:50%
+
+}
 
 
+
+
+
+
+
+
+
+/*Color-Scheme*/
+
+/* Main Background*/
+.color1{
+    background-color: #00a9e2;
+}
+/*Header/Footer Text*/
+.color2{
+    background-color: white;
+}
+/*Main Text*/
+.color3{
+    background-color:  #00a9e2;
+}
+/*Header/Footer*/
+.color4{
+    background-color: #006DAA;
+}
+/*Accent 1*/
+.color5{
+    background-color: #6fffe9;
+}
+/*Accent 2*/ 
+.color6{
+    background-color: #ffba08;
+}
+
+.color-scheme{
+    background-color: white;
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 10px;
+    
+    
+    width:50%
+
+}
+
+
+
+/* Target Audience */
+.audience{
+    background-color: white;
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 10px;
+    
+    
+    width:50%
+
+}
+.content1{
+        background-color: white;
+        margin: 20px auto;
+        padding: 40px;
+        border-radius: 10px;
+        
+        
+        width:50%
+    
+    }
+.content2{
+    background-color: white;
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 10px;
+    
+    
+    width:50%
+
+}
+
+
+/* Home Page */
+.home{
+    background-color: white;
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 10px;
+    
+    
+    width:50%
+
+}
