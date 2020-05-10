@@ -80,6 +80,13 @@ nav li {
         grid-gap: 50px;
     }
 } 
+@media screen and (min-width: 550px){
+    .content1 {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-gap: 45px;
+    }
+}
 
 
 header,
