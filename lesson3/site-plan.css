@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Signika&display=swap');
 
-h1, h2, h3,h4{
+h1, h2, h3{
     font-family: 'Signika', sans-serif;
     padding-left: 30px;
 }
@@ -12,19 +12,18 @@ p{
     padding:25px;
     padding-bottom: 25px;
     font-family: 'Acme', sans-serif;
-    padding-left: 70px;
     line-height: 30px;
+    text-align: center;
 } 
 
 h1{
        padding:5px;
        font-size: 40px;
-       padding-left: 30px;
+    
 }
 h2{
 
     font-size: 30px;
-    padding-left: 30px;
   }
 
 nav {
@@ -56,7 +55,15 @@ nav a:hover {
 nav li {
   display: inline-block;
 }
+img{
+    display: block;
+    margin:0 auto; 
+}
 
+img{
+    max-width: width 400px;
+    width: 95%;
+}
 
 
 @media screen and (min-width: 550px){
@@ -80,13 +87,6 @@ nav li {
         grid-gap: 50px;
     }
 } 
-@media screen and (min-width: 550px){
-    .content1 {
-        display: grid;
-        grid-template-columns: 1fr ;
-        grid-gap: 45px;
-    }
-}
 
 
 header,
@@ -161,9 +161,7 @@ section{
     margin: 20px auto;
     padding: 40px;
     border-radius: 10px;
-    
-    
-    width:50%
+     width:50%
 
 }
 
@@ -175,9 +173,7 @@ section{
     margin: 20px auto;
     padding: 40px;
     border-radius: 10px;
-    
-    
-    width:50%
+    width:50%;
 
 }
 .content1{
@@ -185,9 +181,7 @@ section{
         margin: 20px auto;
         padding: 40px;
         border-radius: 10px;
-        
-        
-        width:50%
+        width:50%;
     
     }
 .content2{
@@ -195,9 +189,7 @@ section{
     margin: 20px auto;
     padding: 40px;
     border-radius: 10px;
-    
-    
-    width:50%
+    width:50%;
 
 }
 
@@ -208,8 +200,6 @@ section{
     margin: 20px auto;
     padding: 40px;
     border-radius: 10px;
-    
-    
-    width:50%
+    width:50%;
 
 }
