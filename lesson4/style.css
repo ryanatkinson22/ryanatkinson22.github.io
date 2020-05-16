@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Signika&display=swap');
+
+h1, h2, h3{
+    font-family: 'Signika', sans-serif;
+    text-align: center;
+}
+
+p{
+    
+    font-size: 20px;
+    padding:25px;
+    padding-bottom: 25px;
+    font-family: 'Acme', sans-serif;
+    line-height: 30px;
+    text-align: center;
+} 
+
+h1{
+       padding:5px;
+       font-size: 40px;
+    
+}
+h2{
+
+    font-size: 30px;
+  }
+
+nav {
+	background-color: #36454f;
+	text-align: center;
+	box-shadow: #00a9e2;
+}
+ nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden; 
+}
+nav ul li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+    font-size: 25px;
+  
+}
+
+nav a:hover {
+	background-color: #00a9e2;
+	color: #36454f;
+}
+
+nav li {
+  display: inline-block;
+}
+img{
+    display: block;
+    margin:0 auto; 
+    float: left;
+}
+
+img{
+    max-width: width 400px;
+    width: 95%;
+}
+
+
+@media screen and (min-width: 550px){
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 45px;
+    }
+    img{
+        max-width: 200px;
+        width: 80%;
+        
+    }
+}
+
+@media screen and (min-width: 900px){
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 50px;
+    }
+} 
+
+
+header,
+footer {
+    text-align: center;
+    background-color: #006DAA;
+    padding: 1px;
+    color: white;
+    line-height: 15px;
+
+}
+
+header a,
+footer a {
+    color: white;
+}
+.home{
+    background-color: white;
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 10px;
+    width:50%;
+
+}
