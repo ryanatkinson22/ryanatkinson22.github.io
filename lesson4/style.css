@@ -51,10 +51,10 @@ nav a:hover {
 	background-color: #00a9e2;
 	color: #36454f;
 }
-
+/*
 nav li {
   display: inline-block;
-}
+}*/
 img{
     display: block;
     margin:0 auto; 
