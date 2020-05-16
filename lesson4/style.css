@@ -4,6 +4,7 @@
 h1, h2, h3{
     font-family: 'Signika', sans-serif;
     text-align: center;
+    flex-direction: row;
 }
 
 p{
@@ -24,6 +25,7 @@ h1{
 h2{
 
     font-size: 30px;
+    flex-direction: row
   }
 
 nav {
@@ -51,14 +53,11 @@ nav a:hover {
 	background-color: #00a9e2;
 	color: #36454f;
 }
-/*
-nav li {
-  display: inline-block;
-}*/
+
 img{
     display: block;
     margin:0 auto; 
-    float: left;
+  /*  float: left; */
     width: 100px;
 }
 /*img{
