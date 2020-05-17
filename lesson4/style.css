@@ -3,7 +3,6 @@
 
 h1, h2, h3{
     font-family: 'Signika', sans-serif;
-    text-align: center;
 }
 
 p{
@@ -155,5 +154,10 @@ footer a {
     padding: 40px;
     border-radius: 10px;
     width:50%;
+    text-align: center;
 
 }
+.h1{background-color: #00a9e2;}
+.h2{background-color: #00a9e2;}
+.h3{background-color: #00a9e2;}
+.h4{background-color: #00a9e2;}
