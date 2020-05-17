@@ -4,7 +4,6 @@
 h1, h2, h3{
     font-family: 'Signika', sans-serif;
     text-align: center;
-    flex-direction: row;
 }
 
 p{
@@ -17,15 +16,14 @@ p{
     text-align: center;
 } 
 
-h1{
+/*h1{
        padding:5px;
-       font-size: 40px;
+       font-size: 40px; 
     
-}
+} */
 h2{
 
     font-size: 30px;
-    flex-direction: row
   }
 
 nav {
@@ -57,7 +55,6 @@ nav a:hover {
 img{
     display: block;
     margin:0 auto; 
-    float: left; 
     width: 100px;
     display: flexbox;
     flex-direction: row;
@@ -120,24 +117,29 @@ li:first-child{
         grid-gap: 50px;
     }
 } 
+/*
 @media screen and (min-width: 900px){
     .header {
         display: flex;
-        flex-direction: columns;
         grid-gap: 50px;
     }
-} 
+} */
 
-header {
-    text-align: center;
-    background-color: #006DAA;
+ header {
+
+    background-color: #006DAA; /*
     padding: 1px;
     color: white;
-    line-height: 15px;
-    display: flex;
+    /*line-height: 15px;*/
+    display: flex; 
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
+} 
+.headings{
+    display: flex;
+    flex-direction: column;
 }
+
 footer {
     text-align: center;
     background-color: #006DAA;

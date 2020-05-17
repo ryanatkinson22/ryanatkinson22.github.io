@@ -87,6 +87,12 @@ img{
         grid-gap: 50px;
     }
 } 
+@media screen and (min-width: 900px){
+    .header {
+        display: flex;
+        grid-gap: 50px;
+    }
+} 
 
 
 header,
