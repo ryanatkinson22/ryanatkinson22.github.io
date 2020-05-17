@@ -57,8 +57,10 @@ nav a:hover {
 img{
     display: block;
     margin:0 auto; 
-  /*  float: left; */
+    float: left; 
     width: 100px;
+    display: flexbox;
+    flex-direction: row;
 }
 /*img{
     max-width: width 400px;
@@ -126,14 +128,23 @@ li:first-child{
     }
 } 
 
-header,
+header {
+    text-align: center;
+    background-color: #006DAA;
+    padding: 1px;
+    color: white;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 footer {
     text-align: center;
     background-color: #006DAA;
     padding: 1px;
     color: white;
     line-height: 15px;
-
+    
 }
 
 header a,
