@@ -180,13 +180,13 @@ li:first-child{
         grid-gap: 50px;
     }
 } 
-@media screen and (min-width: 900px){
+/*@media screen and (min-width: 900px){
     .header {
         display: flex;
         flex-direction: columns;
         grid-gap: 50px;
     }
-} 
+} */
 
 header,
 footer {
