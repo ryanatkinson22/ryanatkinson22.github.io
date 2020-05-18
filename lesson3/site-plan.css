@@ -77,6 +77,14 @@ img{
         width: 80%;
         padding-left: 40px;
         
+        
+    }
+    .home{
+        margin: 20px auto;
+        padding: 40px;
+        border-radius: 10px;
+        width:50%;
+    
     }
 }
 
@@ -167,7 +175,7 @@ section{
     margin: 20px auto;
     padding: 40px;
     border-radius: 10px;
-     width:50%
+     width:100%
 
 }
 
@@ -206,6 +214,6 @@ section{
     margin: 20px auto;
     padding: 40px;
     border-radius: 10px;
-    width:50%;
+    width:100%;
 
 }

@@ -16,7 +16,7 @@ p{
 } 
 
 h1{
-       font-size: 40px; 
+       font-size: 25px; 
     
 } 
 .motto{
@@ -87,6 +87,10 @@ li:first-child{
     li{
         display:block;
     }
+    h1{
+        font-size: 40px; 
+     
+ }
 }
 
 
@@ -115,7 +119,12 @@ li:first-child{
     }
     footer{
         max-width: 900px;
+        margin: 0 auto;
 
+    }
+    .box{
+        max-width: 900px;
+        margin: 0 auto;
     }
 } 
 
@@ -124,6 +133,7 @@ li:first-child{
         display: flex;
         grid-gap: 50px;
     }
+    
 } 
 
  header {
@@ -163,9 +173,11 @@ footer a {
     text-align: center;
 
 }
-.box{background-color: #00a9e2;
+.box{ background-color: #00a9e2;
     display: block;
-    margin: 10px;
+    margin: 10px; 
     padding: 15px;
     font-size: 35px;
+    text-align: center; 
+    
 }
