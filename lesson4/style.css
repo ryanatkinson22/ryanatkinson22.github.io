@@ -113,6 +113,10 @@ li:first-child{
         flex-direction: columns;
         grid-gap: 50px;
     }
+    footer{
+        max-width: 900px;
+
+    }
 } 
 
 @media screen and (min-width: 250px){
