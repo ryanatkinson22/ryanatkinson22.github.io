@@ -164,6 +164,7 @@ header a,
 footer a {
     color: white;
 }
+
 .home{
     background-color: white;
     margin: 20px auto;
@@ -172,10 +173,10 @@ footer a {
     width:50%;
     text-align: center;
 
-}
+} 
 .box{ background-color: #00a9e2;
     display: block;
-    margin: 10px; 
+    margin: 10px auto; 
     padding: 15px;
     font-size: 35px;
     text-align: center; 
