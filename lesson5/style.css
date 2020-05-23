@@ -54,7 +54,7 @@ nav a:hover {
 }
 
 img{ 
-    width: 100px;
+    width: 100px; 
     display: flex;
     flex-direction: row;
 }
@@ -182,8 +182,9 @@ footer a {
     text-align: center; 
     
 }
-.banner-box img{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
+.banner {
+    
+        display: block;
+        margin: 0 auto;
+        width: 100% auto;
 }
