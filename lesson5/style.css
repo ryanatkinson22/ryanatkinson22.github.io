@@ -93,17 +93,20 @@ li:first-child{
  }
 }
 
-
-
+main {
+        max-width: 900px;
+        padding: 20px;
+        margin: 0 auto;
+    } 
 
 
 
 @media screen and (min-width: 550px){
-    .main {
+  /*  .main {
         display: flex;
         flex-direction: columns;
         grid-gap: 45px;
-    }
+    } */
     img{
         max-width: auto;
        /* width: 20%; */
