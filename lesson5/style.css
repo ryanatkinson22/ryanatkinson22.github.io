@@ -93,20 +93,23 @@ li:first-child{
  }
 }
 
-main {
+
+ .body{ background-color: #a6c0f1;
         max-width: 900px;
         padding: 20px;
         margin: 0 auto;
+
+       
     } 
 
 
 
 @media screen and (min-width: 550px){
-  /*  .main {
+    .main {
         display: flex;
         flex-direction: columns;
         grid-gap: 45px;
-    } */
+    } 
     img{
         max-width: auto;
        /* width: 20%; */
@@ -169,15 +172,14 @@ footer a {
 }
 
 .home{
-    background-color: white;
     margin: 20px auto;
-    padding: 40px;
-    border-radius: 10px;
+    padding: 20px;
     width:50%;
     text-align: center;
+    
 
 } 
-.box{ background-color: #00a9e2;
+.box{
     display: block;
     margin: 10px auto; 
     padding: 15px;
@@ -192,13 +194,14 @@ footer a {
 }
 .container-1{
         position: relative;
-        
         width:90%;
+        max-width: 900px;
+        padding: 20px;
         margin: 0 auto;
     
 }
 #weather-summary {
-    box-shadow: 2px 5px 10px -7px var(--charcoal), -2px -5px 10px -7px white;
+    box-shadow: 2px 5px 10px -7px var(--charcoal), -2px -5px 10px -7px red;
     background-color: rgba(222, 244, 253, .7);
     position: absolute;
     top: 20px;
@@ -220,4 +223,63 @@ footer a {
     text-align: left;
     padding-left: 5px;
     
+}
+
+
+/*****  5 Day Forecast *****/
+#forecast{
+    display:block;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#forecast-table{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border-collapse: collapse;
+    padding: 10px;
+    width: 90%;
+    
+}
+
+#forecast-table p{
+    
+    justify-self: stretch;
+    align-self: stretch;
+    margin: 0;
+    border-collapse: collapse;
+}
+
+#forecast-table img{
+    justify-self: center;
+    padding: 5px;
+}
+.content-box {
+    width: 80%;
+    margin: 20px auto;
+}
+
+
+/************ Article **********/
+
+#article {
+    display: flex;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+#article img {
+    margin-left: 20px;
+}
+
+
+
+
+
+/*********** Contact Information ***********/
+.social{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    width: 50px auto;
 }
