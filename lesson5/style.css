@@ -3,6 +3,7 @@
 
 h1, h2, h3{
     font-family: 'Signika', sans-serif;
+    text-align: center;
 }
 
 .p{
@@ -220,27 +221,28 @@ footer a {
         position: relative;
         width:90%;
         margin: 0 auto;
-    
+        background-color: #587f99;
+        padding: 20px;
 }
 .weather-summary {
-    background-color: rgba(222, 244, 253, .7);
+    background-color: rgb(219, 238, 241);
     position: absolute;
     top: 20px;
     left: 20px;
     max-width: 250px;
-    padding: 10px;
+    padding: 20px;
 
 }
-#weather-grid{
+.weather-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-#weather-keys{
+.weather-keys{
     text-align: right;
 }
 
-#weather-values{
+.weather-degrees{
     text-align: left;
     padding-left: 5px;
     
@@ -251,6 +253,7 @@ footer a {
 
 .forecast{
     display: none;
+    padding: 10px;
 }
 
 
@@ -259,7 +262,8 @@ footer a {
 .article-img {
     display: block;
     margin: 0 auto;
-}
+    width: 300px;
+} 
 #article {
     padding: 10px;
     width: 90%;
@@ -267,11 +271,10 @@ footer a {
     display: flex;
 }
 
-container-2{
+.container-2{
     position: relative;
     width:90%;
-
-    margin: 0 auto;
+     margin: 0 auto;
 
 }
 
@@ -315,31 +318,15 @@ container-2{
     }
     .contact-info {
         margin-top: 20px;
-        text-align: left;
+        text-align: right;
         font-size: 1em;
         margin: 50px;
     }
 
-    .contactInfo {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
     #article {
         display: flex;
         padding: 20px;
         margin-bottom: 0;
-    }
-
-    #article img {
-        margin-left: 20px;
-    }
-
-    #forecast-placeholder {
-        width: 100%;
-        height: 30px;
-        background-color: var(--middleblue);
-        display: block;
     }
 
 
@@ -348,23 +335,21 @@ container-2{
 
 
 /*********** Contact Information ***********/
-.contactInfo {
-    display: flex;
-    background-color: var(--middleblue);
-    border-top: 1px solid var(--charcoal);
-}
+
 .contact-info {
     text-align: left;
     margin: 0 auto;
 }
 
 .img3{
+    flex-direction: column;
+    text-align: center;
+    display: flex;
     width: 300px;
     float: left;
-    padding-bottom: 100px;
 }
 .content-box1{
-    text-align: center;
+    padding: 20px;
 }
 .social{
     text-align: center;
