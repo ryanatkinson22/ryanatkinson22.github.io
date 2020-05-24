@@ -396,11 +396,11 @@ a {
         display: block;
     }
 
-   /* main {
+    main {
         max-width: 900px;
         padding: 20px;
         margin: 0 auto;
-    } */
+    } 
     .map{
         display: block;
         

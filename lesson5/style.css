@@ -5,7 +5,7 @@ h1, h2, h3{
     font-family: 'Signika', sans-serif;
 }
 
-p{
+.p{
     
     font-size: 20px;
     padding:25px;
@@ -13,7 +13,8 @@ p{
     font-family: 'Acme', sans-serif;
     line-height: 30px;
     text-align: center;
-} 
+}
+
 
 h1{
        font-size: 25px; 
@@ -53,7 +54,7 @@ nav a:hover {
 	color: #36454f;
 }
 
-img{ 
+header img{ 
     width: 100px; 
     display: flex;
     flex-direction: row;
@@ -142,7 +143,7 @@ li:first-child{
     
 } 
 
- header {
+ header{
 
     background-color: #006DAA; 
     padding: 1px;
@@ -187,21 +188,41 @@ footer a {
     text-align: center; 
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.content-box {
+    box-shadow: 2px 5px 10px -7px var(--charcoal), -2px -5px 10px -7px white;
+    margin: 20px;
+    background-color: var(--lightblue);
+        width: 80%;
+        margin: 20px auto;
+    
+} 
+
+
 .banner {
     display: block;
     margin: 0 auto;
     width: 100%;
 }
+
 .container-1{
         position: relative;
         width:90%;
-        max-width: 900px;
-        padding: 20px;
         margin: 0 auto;
     
 }
-#weather-summary {
-    box-shadow: 2px 5px 10px -7px var(--charcoal), -2px -5px 10px -7px red;
+.weather-summary {
     background-color: rgba(222, 244, 253, .7);
     position: absolute;
     top: 20px;
@@ -227,59 +248,127 @@ footer a {
 
 
 /*****  5 Day Forecast *****/
-#forecast{
-    display:block;
-    text-align: center;
-    border-collapse: collapse;
-}
 
-#forecast-table{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    border-collapse: collapse;
-    padding: 10px;
-    width: 90%;
-    
-}
-
-#forecast-table p{
-    
-    justify-self: stretch;
-    align-self: stretch;
-    margin: 0;
-    border-collapse: collapse;
-}
-
-#forecast-table img{
-    justify-self: center;
-    padding: 5px;
-}
-.content-box {
-    width: 80%;
-    margin: 20px auto;
+.forecast{
+    display: none;
 }
 
 
 /************ Article **********/
 
+.article-img {
+    display: block;
+    margin: 0 auto;
+}
 #article {
+    padding: 10px;
+    width: 90%;
+    margin: 20px auto;
     display: flex;
-    padding: 20px;
-    margin-bottom: 0;
 }
 
-#article img {
-    margin-left: 20px;
+container-2{
+    position: relative;
+    width:90%;
+
+    margin: 0 auto;
+
 }
 
+@media only screen and (min-width: 550px) {
+
+    
+    .forecast{
+        display:block;
+        text-align: center;
+        border-collapse: collapse;
+    }
+    
+    #forecast-table{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        border-collapse: collapse;
+        padding: 10px;
+        width: 90%;
+        
+    }
+    
+    #forecast-table p{
+        
+        justify-self: stretch;
+        align-self: stretch;
+        margin: 0;
+        border-collapse: collapse;
+    }
+    
+    #forecast-table img{
+        justify-self: center;
+        padding: 5px;
+    }
+    .content-box {
+        width: 80%;
+        margin: 20px auto;
+    } 
+    .map {
+        width: 300px;
+        margin: 20px;
+    }
+    .contact-info {
+        margin-top: 20px;
+        text-align: left;
+        font-size: 1em;
+        margin: 50px;
+    }
+
+    .contactInfo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #article {
+        display: flex;
+        padding: 20px;
+        margin-bottom: 0;
+    }
+
+    #article img {
+        margin-left: 20px;
+    }
+
+    #forecast-placeholder {
+        width: 100%;
+        height: 30px;
+        background-color: var(--middleblue);
+        display: block;
+    }
 
 
+    
+}
 
 
 /*********** Contact Information ***********/
-.social{
+.contactInfo {
     display: flex;
-    flex-direction: row;
-    padding: 10px;
-    width: 50px auto;
+    background-color: var(--middleblue);
+    border-top: 1px solid var(--charcoal);
+}
+.contact-info {
+    text-align: left;
+    margin: 0 auto;
+}
+
+.img3{
+    width: 300px;
+    float: left;
+    padding-bottom: 100px;
+}
+.content-box1{
+    text-align: center;
+}
+.social{
+    text-align: center;
+}
+.strong{
+    text-align: center;
 }
