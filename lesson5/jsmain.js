@@ -13,3 +13,18 @@ let monthname = m_names[mydate.getMonth()];
 
 const dateoutput = document.querySelector('#date');
 dateoutput.textContent = weekname + ", " + mydate.getDate() + " " + monthname + " " + mydate.getFullYear();
+
+
+
+pancakes();
+function pancakes(){
+    if (weekname == "Friday"){
+        alert('pancakes');
+
+        const fridaydiv = document.getElementById("Friday");
+        fridaydiv.style.display = "block";
+
+        document.body.classList.toggle('movedown');
+    }
+} ; 
+
