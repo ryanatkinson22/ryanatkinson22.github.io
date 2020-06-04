@@ -14,11 +14,12 @@ function preloadImage(img){
 const options = {threshold: [.5]};
 
 const io = new IntersectionObserver (
-    (enteries, io) => {
+    (entries, io) => {
         entries.forEach(entry => {
             if (!entry.isIntersecting){
                 return;
             } else{
+                console.log(entry.target);      
                 preloadImage(entry.target);
                 io.unobserve(entry.target);
         }
