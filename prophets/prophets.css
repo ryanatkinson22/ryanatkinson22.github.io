@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+.card{
+    background-color: #006DAA;
+    text-align: center;
+    margin: 5px;
+    text-align: center;
+    border: 1px gray;
+    max-width: 330px;
+}
+.card img{
+    width: 60%;
+    display: block;
+    margin: 10px auto 20px;
+}
+
+.cards{
+   justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 5px;
+    width: 95%;
+}
+h1,h2{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+h1{
+    background-color: #006DAA;
+}
+footer {
+    text-align: center;
+    background-color: #006DAA;
+    padding: 1px;
+    color: white;
+    line-height: 15px;
+    
+}
+header a,
+footer a {
+    color: white;
+}
