@@ -28,7 +28,7 @@ fetch(requestURL)
             let photo = document.createElement('img');
         
             div.classList.add('textDiv'); 
-            photo.setAttribute('src', 'lesson9/img/' + towns[i].photo);
+            photo.setAttribute("src",'images/' + towns[i].photo);
             h2.textContent = towns[i].name;
             h3.textContent = towns[i].motto;
             p1.textContent = 'Year Founded: ' + towns[i].yearFounded;
