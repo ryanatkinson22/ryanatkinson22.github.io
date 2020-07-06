@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="wf-baloo2-n4-active wf-roboto-n4-active wf-active" >
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,45 +52,69 @@
                   <h2>Weather Summary</h2>
                   <div class="weather-grid">
                       <div class="weather-keys">
-                          <p>Currently:</p>
-                          <p>High:</p>
-                          <p>Wind Chill: </p>
-                          <p>Humidity: </p>
-                          <p>Wind Speed:</p>
+                        <div id="weathersum">
+                          <table id="weathersumtable">
+                              <tr>
+                                  <th id="tablehead">Weather Summary</th>
+                              </tr>
+                              <tr>
+                                  <td class="columnone">Currently:</td>
+                                  <td class="columntwo"><span id="current-weather"></span></td>
+                              </tr>
+                              <tr>
+                                  <td class="columnone">High:</td>
+                                  <td class="columntwo"><span id="temp"></span>&deg;</td>
+                              </tr>
+                              <tr>
+                                  <td class="columnone">Wind Chill:</td>
+                                  <td class="columntwo"><span id="chill"></span></td>
+                              </tr>
+                              <tr>
+                                  <td class="columnone">Humidity:</td>
+                                  <td class="columntwo"><span id="humidity"></span></td>
+                              </tr>
+                              <tr>
+                                  <td class="columnone">Wind Speed:</td>
+                                  <td class="columntwo"><span id="wind"></span></td>
+                              </tr>
+                          </table>
                       </div>
-                      <div class="weather-degrees">
-                          <p>Sunny</p>
-                          <p id="temp"> 76 </p>
-                          <p id="chill">  </p>
-                          <p>69%</p>
-                          <p><span id="wind"> 5 </span></p>
+          
                       </div>
                   </div>
               </div>
           </section>
 
 
-               <section class="forecast">
-                  <h2>5 Day Forcast</h2>
-                  <div id="forecast-table" class="content-box">
-                    <p>Wed</p>
-                    <p>Thu</p>
-                    <p>Fri</p>
-                    <p>Sat</p>
-                    <p>Sun</p>
-                    <img src="images/sunlogo.png" alt="It is sunny">
-                    <img src="images/sunlogo.png" alt="It is sunny">
-                    <img src="images/sunlogo.png" alt="It is sunny">
-                    <img src="images/sunlogo.png" alt="It is sunny">
-                    <img src="images/sunlogo.png" alt="It is sunny">
-                    <p>75&#0176;</p>
-                    <p>75&#0176;</p>
-                    <p>75&#0176;</p>
-                    <p>75&#0176;</p>
-                    <p>75&#0176;</p>
-                </div>
+          <div id="fivedayforcast">
+            <h3 id="fiveforcasttitle">5 Day Forcast</h3>
 
-               </section>
+            <table id="fiveforcasttable">
+                <tr id="tableday">
+                    <td class="fiveforcast-td">Wed</td>
+                    <td class="fiveforcast-td">Thu</td>
+                    <td class="fiveforcast-td">Fri</td>
+                    <td class="fiveforcast-td">Sat</td>
+                    <td class="fiveforcast-td">Sun</td>
+                </tr>
+                <tr>
+                    <td><span id="image0"></span><img src="" alt="" id="icon0"></td>
+                    <td><span id="image1"></span><img src="" alt="" id="icon1"></td>
+                    <td><span id="image2"></span><img src="" alt="" id="icon2"></td>
+                    <td><span id="image3"></span><img src="" alt="" id="icon3"></td>
+                    <td><span id="image4"></span><img src="" alt="" id="icon4"></td>
+                </tr>
+                <tr>
+                    <td class="fiveforcast-td"><span id="day0"></span>&deg;</td>
+                    <td class="fiveforcast-td"><span id="day1"></span>&deg;</td>
+                    <td class="fiveforcast-td"><span id="day2"></span>&deg;</td>
+                    <td class="fiveforcast-td"><span id="day3"></span>&deg;</td>
+                    <td class="fiveforcast-td"><span id="day4"></span>&deg;</td>
+                </tr>
+            </table>
+        </div>
+
+               
 
                <section class="container-2">
                   <h2>Article</h2>
