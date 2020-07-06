@@ -1,62 +1,52 @@
-const recieveUrl = 'https://byui-cit230.github.io/weather/data/towndata.json';
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
-fetch(recieveUrl)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
-    console.table(jsonObject); 
-    const towns = jsonObject['towns'];
+fetch(requestURL)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (jsonObject) {
+        console.table(jsonObject);
+        const source = jsonObject['towns'];
+        let towns = []
+        j=0
 
-    for (let i = 0; i < towns.length; i++ ) {
-      if(towns[i].name == "Preston" || towns[i].name == "Soda Springs" || towns[i].name == "Fish Haven"){
-          let card = document.createElement('section');
-          let h2 = document.createElement('h2');
-          let h4 = document.createElement('h4');
-          let par1 = document.createElement('p');
-          let par2 = document.createElement('p');
-          let par3 = document.createElement('p');
-          let image = document.createElement('img');
-  
-          
-          h2.textContent = towns[i].name;
-          card.appendChild(h2);
-          h2.setAttribute("class", "h2name");
-          document.querySelector('div.cards').appendChild(card);
-  
-          h4.textContent = towns[i].motto;
-          card.appendChild(h4);
-          h4.setAttribute("class", "h4motto");
-          document.querySelector('div.cards').appendChild(card);
-  
-          par1.textContent = 'Year Founded: ' + towns[i].yearFounded;
-          card.appendChild(par1);
-          par1.setAttribute("class", "par1year");
-          document.querySelector('div.cards').appendChild(card);
-  
-          par2.textContent = 'Population: ' + towns[i].currentPopulation;
-          card.appendChild(par2);
-          par2.setAttribute("class", "par2pop");
-          document.querySelector('div.cards').appendChild(card);
-  
-          par3.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
-          card.appendChild(par3);
-          par3.setAttribute("class", "par3rain")
-          document.querySelector('div.cards').appendChild(card);
-  
-          image.setAttribute("src", "https://Hopwhitlock64.github.io/lesson9/images/" + towns[i].photo);
-          image.setAttribute("alt", "picture of the town");
-          card.appendChild(image);
-          card.classList.add('section');
-  
-          document.querySelector('div.cards').appendChild(card);
+        for (let i = 0; i < source.length; i++) {
+            if (source[i].name == "Preston" || source[i].name == "Fish Haven" || source[i].name == "Soda Springs") {
+                towns[j] = source[i]
+                j++
+            }
+        }
+
+        for (let i = 0; i < towns.length; i++ ) {
+            let card = document.createElement('section');
+            let div = document.createElement('div');
+            let h2 = document.createElement('h2');
+            let h3 = document.createElement('h3');
+            let p1 = document.createElement('p');
+            let p2 = document.createElement('p');
+            let p3 = document.createElement('p');
+            let photo = document.createElement('img');
         
+            div.classList.add('textDiv'); 
+            photo.setAttribute('src', 'lesson9/img/' + towns[i].photo);
+            h2.textContent = towns[i].name;
+            h3.textContent = towns[i].motto;
+            p1.textContent = 'Year Founded: ' + towns[i].yearFounded;
+            p2.textContent = 'Population: ' + towns[i].currentPopulation;
+            p3.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
+            
 
-        
-      }
-     
-    }
-  })
-  .catch(function(error){
-   
-  });
+            card.appendChild(photo);
+            card.appendChild(div);
+            div.appendChild(h2);
+            div.appendChild(h3);
+            div.appendChild(p1);
+            div.appendChild(p2);
+            div.appendChild(p3);
+           
+            document.querySelector('div.cards').appendChild(card);
+        }
+    })
+    .catch(function (error){
+        alert("Sorry the data is not available now.");
+    })
