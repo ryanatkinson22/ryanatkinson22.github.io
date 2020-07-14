@@ -1,0 +1,311 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Signika&display=swap'); */
+
+h1, h2, h3{
+  font-family: 'Signika', sans-serif;
+  text-align: center;
+}
+
+.p{
+  
+  font-size: 20px;
+  padding:25px;
+  padding-bottom: 25px;
+  font-family: 'Acme', sans-serif;
+  line-height: 30px;
+  text-align: center;
+}
+
+
+h1{
+     font-size: 25px; 
+  
+} 
+.motto{
+  text-align: center;
+}
+h2{
+
+  font-size: 30px;
+}
+
+nav {
+background-color: #36454f;
+text-align: center;
+box-shadow: #00a9e2;
+}
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden; 
+}
+nav ul li a {
+display: block;
+color: white;
+text-align: center;
+padding: 15px;
+text-decoration: none;
+  font-size: 25px;
+
+}
+
+nav a:hover {
+background-color: #00a9e2;
+color: #36454f;
+}
+
+header img{ 
+  width: 100px; 
+  display: flex;
+  flex-direction: row;
+} 
+
+
+ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+li{
+  padding: 15px;
+  display: none;
+}
+li:first-child{
+  display:block;
+}
+.responsive li {
+  display:block;
+}
+@media screen and (min-width: 550px){
+  ul {
+      flex-direction: row;
+  }
+  li:first-child{
+      display: none;
+  }
+  li{
+      display:block;
+  }
+  h1{
+      font-size: 40px; 
+   
+}
+}
+
+
+
+
+
+ 
+
+@media screen and (min-width: 550px){
+  .main {
+      display: flex;
+      flex-direction: columns;
+      grid-gap: 45px;
+  } 
+
+}
+
+@media screen and (min-width: 900px){
+  .main {
+      display: flex;
+      flex-direction: columns;
+      grid-gap: 50px;
+  }
+  footer{
+      max-width: 900px;
+      margin: 0 auto;
+
+  }
+  .submitbtn {
+      width: 250px;
+      padding: 20px;
+      font-size: 1.2em;
+  }
+} 
+
+@media screen and (min-width: 250px){
+  .header {
+      display: flex;
+      grid-gap: 50px;
+  }
+  
+} 
+
+header{
+
+  background-color: #006DAA; 
+  padding: 1px;
+  color: white;
+  line-height: 15px;
+  display: flex; 
+  align-items: center;
+  justify-content: center; 
+} 
+.headings{
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  text-align: center;
+  background-color: #006DAA;
+  padding: 1px;
+  color: white;
+  line-height: 15px;
+  
+}
+
+header a,
+footer a {
+  color: white;
+}
+
+h2 {
+  text-align:center;
+}
+body {
+  margin: 1em;
+  padding: .5em;
+  text-align: center;
+  font-family: 'Signika', sans-serif;
+}
+
+
+.cards{
+  width: 100%;
+  margin: .5rem auto;
+}
+
+
+img {
+     width: 100%;
+      height: auto;
+    }
+  
+#map-contact {
+      background-color: #EAF0F9;
+      padding: 25px;
+      margin-top: 50px; }
+    
+#map {
+      width: 100%; }
+
+
+
+@media screen and (min-width: 550px){
+  .cards{
+    display:block;
+  }
+  section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width:100%;
+  }
+section:nth-child(odd) .h2name{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+section:nth-child(odd) .h4motto{
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+section:nth-child(odd) .par1year{
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+section:nth-child(odd) .par2pop{
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+section:nth-child(odd) .par3rain{
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+section:nth-child(odd) img {
+  grid-column: 2/3;
+  grid-row: 1/6;
+}
+section:nth-child(odd) .cards {
+display: grid;
+grid-column: 1/2;
+grid-row: 1/2;
+}
+
+section:nth-child(even) .h2name{
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+section:nth-child(even) .h4motto{
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+section:nth-child(even) .par1year{
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+section:nth-child(even) .par2pop{
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+section:nth-child(even) .par3rain{
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+section:nth-child(even) img {
+  grid-column: 1/2;
+  grid-row: 1/6;
+}
+
+
+ul{
+  flex-direction: row;
+ } 
+ li:first-child{
+     display: none;
+ }
+ li{
+     display: block; 
+ }
+
+@media screen and (min-width: 850px){
+  section{
+    display: block;
+  }
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    }
+  img{
+      padding: 30px;
+      width: 80%;
+    }
+    ul{
+      flex-direction: row;
+     } 
+     li:first-child{
+         display: none;
+     }
+     li{
+         display: block; 
+     }
+     
+}
+
+}
+
+
+
+
+
+
+
+
+
+

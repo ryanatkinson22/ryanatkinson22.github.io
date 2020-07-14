@@ -1,0 +1,417 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Signika&display=swap'); */
+
+h1, h2, h3{
+  font-family: 'Signika', sans-serif;
+  text-align: center;
+}
+
+.p{
+  
+  font-size: 20px;
+  padding:25px;
+  padding-bottom: 25px;
+  font-family: 'Acme', sans-serif;
+  line-height: 30px;
+  text-align: center;
+}
+
+
+h1{
+     font-size: 25px; 
+  
+} 
+.motto{
+  text-align: center;
+}
+h2{
+
+  font-size: 30px;
+}
+
+nav {
+background-color: #36454f;
+text-align: center;
+box-shadow: #00a9e2;
+}
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden; 
+}
+nav ul li a {
+display: block;
+color: white;
+text-align: center;
+padding: 15px;
+text-decoration: none;
+  font-size: 25px;
+
+}
+
+nav a:hover {
+background-color: #00a9e2;
+color: #36454f;
+}
+
+header img{ 
+  width: 100px; 
+  display: flex;
+  flex-direction: row;
+} 
+
+
+ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+li{
+  padding: 15px;
+  display: none;
+}
+li:first-child{
+  display:block;
+}
+.responsive li {
+  display:block;
+}
+@media screen and (min-width: 550px){
+  ul {
+      flex-direction: row;
+  }
+  li:first-child{
+      display: none;
+  }
+  li{
+      display:block;
+  }
+  h1{
+      font-size: 40px; 
+   
+}
+}
+
+
+.body{ background-color: #a6c0f1;
+      max-width: 900px;
+      padding: 20px;
+      margin: 0 auto;
+
+     
+  } 
+
+
+  .hero-img {
+      position: relative;
+      width: 100%;
+  }
+
+@media screen and (min-width: 550px){
+  .main {
+      display: flex;
+      flex-direction: columns;
+      grid-gap: 45px;
+  } 
+  img{
+      max-width: auto;
+     /* width: 20%; */
+      
+  } 
+}
+
+@media screen and (min-width: 900px){
+  .main {
+      display: flex;
+      flex-direction: columns;
+      grid-gap: 50px;
+  }
+  footer{
+      max-width: 900px;
+      margin: 0 auto;
+
+  }
+  .box{
+      max-width: 900px;
+      margin: 0 auto;
+  }
+} 
+
+@media screen and (min-width: 250px){
+  .header {
+      display: flex;
+      grid-gap: 50px;
+  }
+  
+} 
+
+header{
+
+  background-color: #006DAA; 
+  padding: 1px;
+  color: white;
+  line-height: 15px;
+  display: flex; 
+  align-items: center;
+  justify-content: center; 
+} 
+
+
+footer {
+  text-align: center;
+  background-color: #006DAA;
+  padding: 1px;
+  color: white;
+  line-height: 15px;
+  
+}
+
+header a,
+footer a {
+  color: white;
+}
+
+.home{ 
+  margin: 20px auto;
+  padding: 20px; 
+  width:50%; 
+  text-align: center;
+  
+
+} 
+.box{
+  display: block;
+  margin: 10px auto; 
+  padding: 15px;
+  font-size: 35px;
+  text-align: center; 
+  
+}
+
+#fivedayforcast {
+ /* background-color: #EAF0F9; */
+  font-size: 16px;
+  text-align: center;
+  padding: 15px;
+  align-items: center;
+  margin-top: 70px;
+}
+
+#fiveforcasttable {
+  margin-left: auto;
+  margin-right: auto;
+;
+}
+
+#icon0, #icon1, #icon2, #icon3, #icon4 {
+  height: 60px;
+}
+
+
+#map-contact {
+  background-color: #EAF0F9;
+  padding: 25px;
+  margin-top: 50px; }
+
+#map {
+  width: 100%; }
+
+
+
+
+
+
+
+
+.content-box {
+/*  box-shadow: 2px 5px 10px -7px var(--charcoal), -2px -5px 10px -7px white; */
+  margin: 20px;
+  background-color: var(--lightblue);
+      width: 80%;
+      margin: 20px auto;
+  
+} 
+
+/*
+.banner {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+*/
+
+.weather-summary {
+/*  background-color: rgb(219, 238, 241); */
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  max-width: 250px;
+  padding: 20px;
+
+}
+.weather-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.weather-keys{
+  text-align: right;
+}
+
+.weather-degrees{
+  text-align: left;
+  padding-left: 5px;
+  
+}
+
+
+/*****  5 Day Forecast *****/
+
+#weathersumtable {
+  background-color: #00a9e2;
+  padding: 10px;
+  font-size: 16px;
+  position: relative;
+  margin: 18px;
+  margin-top: 50px;
+}
+
+#table {
+  font-size: 18px;
+}
+
+.columnone {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.columntwo {
+  color:black;
+}
+
+
+/************ Article **********/
+.container-1{
+      position: relative;
+ /*     width:90%; */
+      margin: 0 auto;
+      background-color: #587f99;
+      padding: 20px;
+} 
+
+.article-img { 
+  display: block;
+  margin: 0 auto; 
+  width: 300px;
+} 
+#article {
+  padding: 10px;
+  width: 90%;
+  margin: 20px auto;
+
+}
+
+.container-2{
+  position: relative;
+  width:90%;
+   margin: 0 auto;
+
+}
+
+@media only screen and (min-width: 550px) {
+
+  
+  .forecast{
+      display:block;
+      text-align: center;
+      border-collapse: collapse;
+  }
+  
+  #forecast-table{
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      border-collapse: collapse;
+      padding: 10px;
+      width: 90%;
+      
+  }
+  
+  #forecast-table p{
+      
+      justify-self: stretch;
+      align-self: stretch;
+      margin: 0;
+      border-collapse: collapse;
+  }
+  
+  #forecast-table img{
+      justify-self: center;
+      padding: 5px;
+  }
+  .content-box {
+      width: 80%;
+      margin: 20px auto;
+  } 
+  .map {
+      width: 300px;
+      margin: 20px;
+  }
+  .contact-info {
+      margin-top: 20px;
+      text-align: right;
+      font-size: 1em;
+      margin: 50px;
+  }
+
+  #article {
+      display: flex;
+      padding: 20px;
+      margin-bottom: 0;
+  }
+
+
+  
+}
+
+
+/*********** Contact Information ***********/
+
+.contact-info {
+  text-align: left;
+  margin: 0 auto;
+}
+
+.img3{ 
+  width: 300px;
+  /*
+  float: left; */
+} 
+.content-box1{
+  padding: 20px;
+}
+.social{
+  text-align: center;
+}
+.strong{
+  text-align: center;
+}
+
+main{
+  background-color: #006DAA;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
