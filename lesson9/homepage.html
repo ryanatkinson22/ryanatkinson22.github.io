@@ -6,7 +6,7 @@
     <meta name="description" content="Assignment 4">
     <title> preston - Idaho </title>
     <link rel="shortcut icon" href="favicon.ico">
-    <link href="main.css" rel="stylesheet"> 
+    <link href="style.css" rel="stylesheet"> 
 
          </head>
           <body>
@@ -20,7 +20,7 @@
               <main>
                 <nav>
                     <ul class="navigation">
-                      <li><a class="ham" href="#"> &#9776; Menu</a></li>
+                      <li><a id="ham" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="target-audience.html">Preston Idaho </a></li>
                         <li><a href="color-scheme.html"> Soda Springs </a></li>
@@ -41,7 +41,8 @@
         <p> @| 2020 | Leo R. Atkinson | Rexburg | <a  href="https://byui.edu/"> BYUI Online Lerning </a> <br>
             Last Updated: <span id="update"></span> <span id="date"></span> </p>
           </footer>
-        <script src="jsmain.js">  </script>
+        <script src="JS/jsmain.js">  </script>
+        <script src="JS/weather.js">  </script>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script>
           WebFont.load({

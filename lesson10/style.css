@@ -210,7 +210,13 @@ footer a {
 }
 
 
-
+#map-contact {
+    background-color: #EAF0F9;
+    padding: 25px;
+    margin-top: 50px; }
+  
+  #map {
+    width: 100%; }
 
 
 
@@ -304,7 +310,7 @@ footer a {
     padding: 10px;
     width: 90%;
     margin: 20px auto;
- /*   display: flex; */
+
 }
 
 .container-2{
@@ -391,3 +397,19 @@ footer a {
 .strong{
     text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
