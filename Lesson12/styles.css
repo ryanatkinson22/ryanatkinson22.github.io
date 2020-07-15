@@ -456,7 +456,7 @@
   }
   
   header {
-    background-color: #e3c517;
+    background-color: lightseagreen;
     padding: 1rem 2%;
   }
   
@@ -508,7 +508,7 @@
   }
   
   main h1 {
-    color: #e3c517;
+    color: grey;
     font-weight: 700;
   }
   
@@ -527,7 +527,7 @@
   }
   
   footer {
-    background-color: #e3c517;
+    background-color: lightseagreen;
     text-align: center;
     padding: 1rem 2%;
   }
